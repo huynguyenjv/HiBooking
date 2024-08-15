@@ -1,4 +1,4 @@
-package web.hibooking.backend.exceptions;
+package web.hibooking.backend.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

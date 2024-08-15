@@ -4,8 +4,10 @@ import { CircularProgress } from "@mui/material";
 import loadable from "@loadable/component";
 import AuthLayout from "./layouts/AuthLayout";
 import BasicLayout from "./layouts/BasicLayout";
+import BlankLayout from "./layouts/BlankLayout";
 
 const Home = loadable(() => import("./pages/Home"));
+const Login = loadable(() => import("./pages/Login"));
 
 export default function App() {
     return (
@@ -18,6 +20,16 @@ export default function App() {
                         element={
                             <Suspense fallback={<CircularProgress />}>
                                 <Home title="HomePage" />
+                            </Suspense>
+                        }
+                    />
+                </Route>
+                <Route element={<BlankLayout />}>
+                    <Route
+                        path="/dang-nhap"
+                        element={
+                            <Suspense fallback={<CircularProgress />}>
+                                <Login title="Đăng nhập" />
                             </Suspense>
                         }
                     />

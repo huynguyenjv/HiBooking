@@ -1,2 +1,4 @@
-package web.hibooking.backend.config.security;public class Authenticate {
+package web.hibooking.backend.config.security;
+
+public class Authenticate {
 }

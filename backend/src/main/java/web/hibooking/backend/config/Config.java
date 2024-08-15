@@ -1,2 +1,4 @@
-package web.hibooking.backend.config.security;public class Config {
+package web.hibooking.backend.config;
+
+public class Config {
 }
