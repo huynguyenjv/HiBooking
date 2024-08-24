@@ -5,32 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877d58e2-cfd9-4b4c-9ebe-828f8585e214" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/config/security/Authenticate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserCreationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserProfileCreationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/UserProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/pages/Login/components/FormLogin.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/constant/PredefinedRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/AddressCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/ContactCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/IntrospectRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/RoleCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/TestCreationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/AddressResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/ContactResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/IntrospectResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/RoleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/TestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/UserProfileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/enums/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/ContactMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/TestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/ContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/TestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/UserProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/ContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/UserProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserProfileCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/request/UserProfileCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/dto/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/entities/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/web/hibooking/backend/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/pages/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/pages/Login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/web/hibooking/backend/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/web/hibooking/backend/BackendApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/.storybook/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/.storybook/preview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +94,10 @@
     &quot;accountId&quot;: &quot;43dc3462-8730-44df-86d9-c2a1e6f1893b&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -83,6 +113,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.BackendApplicationTests.hash.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.backend [clean].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -99,7 +131,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -108,7 +140,23 @@
       <recent name="web.hibooking.backend.config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration name="BackendApplicationTests.hash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="web.hibooking.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web.hibooking.backend" />
+      <option name="MAIN_CLASS_NAME" value="web.hibooking.backend.BackendApplicationTests" />
+      <option name="METHOD_NAME" value="hash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="backend" />
@@ -117,12 +165,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BackendApplicationTests.hash" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -146,6 +199,23 @@
       <workItem from="1723544294264" duration="1129000" />
       <workItem from="1723545745612" duration="224000" />
       <workItem from="1723602259827" duration="7090000" />
+      <workItem from="1723738239003" duration="615000" />
+      <workItem from="1723790055463" duration="1942000" />
+      <workItem from="1723813581755" duration="1046000" />
+      <workItem from="1723814645719" duration="1716000" />
+      <workItem from="1723911425386" duration="9824000" />
+      <workItem from="1724007877363" duration="1276000" />
+      <workItem from="1724079394186" duration="1712000" />
+      <workItem from="1724298150562" duration="109000" />
+      <workItem from="1724298401243" duration="933000" />
+      <workItem from="1724299510489" duration="6663000" />
+      <workItem from="1724307546717" duration="338000" />
+      <workItem from="1724307980551" duration="617000" />
+      <workItem from="1724332951012" duration="11729000" />
+      <workItem from="1724353847066" duration="1590000" />
+      <workItem from="1724402669031" duration="1478000" />
+      <workItem from="1724457848009" duration="7043000" />
+      <workItem from="1724481975537" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -165,5 +235,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init project" />
     <option name="LAST_COMMIT_MESSAGE" value="init project" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

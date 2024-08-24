@@ -28,7 +28,7 @@ public class UserProfile {
 
     @Column(nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
-    Timestamp birthDay;
+    String birthDay;
 
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)

@@ -40,7 +40,7 @@ public class Address {
     Timestamp deletedAt;
 
     @OneToOne
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     User user;
 
     @PrePersist

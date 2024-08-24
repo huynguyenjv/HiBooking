@@ -2,6 +2,11 @@ package web.hibooking.backend.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import web.hibooking.backend.entities.Address;
+import web.hibooking.backend.entities.Role;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @Builder
@@ -9,11 +14,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = lombok.AccessLevel.PRIVATE)
 public class UserResponse {
+    String id;
     String email;
-    String password;
-//    String firstName;
-//    String lastName;
-//    String birthDay;
-//    String createdAt;
-//    String deletedAt;
+    AddressResponse addressResponse;
+    ContactResponse contactResponse;
+    UserProfileResponse userProfileResponse;
+    Set<String> roles;
 }

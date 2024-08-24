@@ -5,12 +5,14 @@ import lombok.experimental.FieldDefaults;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserProfileCreationRequest {
-    String firstName;
-    String lastName;
-    String birthDay;
+public class AddressCreationRequest {
+    Long id;
+    String street;
+    String city;
+    String state;
+    String country;
     String userId;
 }
