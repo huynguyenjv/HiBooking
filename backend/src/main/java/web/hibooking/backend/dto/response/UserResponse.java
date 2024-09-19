@@ -2,10 +2,7 @@ package web.hibooking.backend.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-import web.hibooking.backend.entities.Address;
-import web.hibooking.backend.entities.Role;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Data

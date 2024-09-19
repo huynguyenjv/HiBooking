@@ -1,6 +1,5 @@
 package web.hibooking.backend.service;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
@@ -9,7 +8,7 @@ import web.hibooking.backend.dto.response.ContactResponse;
 import web.hibooking.backend.entities.Contact;
 import web.hibooking.backend.entities.User;
 import web.hibooking.backend.exception.AppException;
-import web.hibooking.backend.exception.ErrorCode;
+import web.hibooking.backend.enums.ErrorCode;
 import web.hibooking.backend.mapper.ContactMapper;
 import web.hibooking.backend.repository.ContactRepository;
 import web.hibooking.backend.repository.UserRepository;
@@ -35,5 +34,27 @@ public class ContactService {
         contact.setUser(user);
 
         return contactMapper.toContactResponse(contactRepository.save(contact));
+    }
+
+    public ContactResponse updateByUserId(ContactCreationRequest request){
+
+            Contact contact = contactRepository.findContactByUserId(request.getUserId())
+                    .orElseThrow(() -> new AppException(ErrorCode.CONTACT_NOT_FOUND));
+
+            contact.setPhone(request.getPhone());
+            contact.setEmail(request.getEmail());
+            contact.setFacebook(request.getFacebook());
+            contact.setInstagram(request.getInstagram());
+
+
+            return contactMapper.toContactResponse(contactRepository.save(contact));
+    }
+
+    public ContactResponse getContactByUser(String idUser){
+
+        Contact contact = contactRepository.findContactByUserId(idUser)
+                .orElseThrow(() -> new AppException(ErrorCode.CONTACT_NOT_FOUND));
+
+        return contactMapper.toContactResponse(contact);
     }
 }

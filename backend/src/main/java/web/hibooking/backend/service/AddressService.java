@@ -8,7 +8,7 @@ import web.hibooking.backend.dto.response.AddressResponse;
 import web.hibooking.backend.entities.Address;
 import web.hibooking.backend.entities.User;
 import web.hibooking.backend.exception.AppException;
-import web.hibooking.backend.exception.ErrorCode;
+import web.hibooking.backend.enums.ErrorCode;
 import web.hibooking.backend.mapper.AddressMapper;
 import web.hibooking.backend.repository.AddressRepository;
 import web.hibooking.backend.repository.UserRepository;
@@ -34,6 +34,29 @@ public class AddressService {
         address.setUser(user);
 
         return addressMapper.toAddressResponse(addressRepository.save(address));
+
+    }
+
+    public AddressResponse updateByUserId(AddressCreationRequest request) {
+
+        Address address = addressRepository.findAddressByUserId(request.getUserId())
+                .orElseThrow(() -> new AppException(ErrorCode.ADDRESS_NOT_FOUND));
+
+        address.setCity(request.getCity());
+        address.setState(request.getState());
+        address.setStreet(request.getStreet());
+        address.setCountry(request.getCountry());
+
+
+        return addressMapper.toAddressResponse(addressRepository.save(address));
+    }
+
+    public AddressResponse getAddressByUser(String idUser) {
+
+        Address address = addressRepository.findAddressByUserId(idUser)
+                .orElseThrow(() -> new AppException(ErrorCode.ADDRESS_NOT_FOUND));
+
+        return addressMapper.toAddressResponse(address);
 
     }
 }

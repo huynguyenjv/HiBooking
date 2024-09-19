@@ -35,8 +35,16 @@ public class Contact {
     @Email
     String email;
 
+    @Column(name = "facebook", length = 50)
+    @Size(min = 1, max = 200, message = "Facebook must be between 1 and 200 characters")
+    String facebook;
+
+    @Column(name = "instagram", length = 50)
+    @Size(min = 1, max = 200, message = "Instagram must be between 1 and 200 characters")
+    String instagram;
+
     @OneToOne
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     User user;
 
     @Column(nullable = false)

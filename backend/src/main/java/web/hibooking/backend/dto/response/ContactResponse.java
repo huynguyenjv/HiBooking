@@ -15,5 +15,7 @@ public class ContactResponse {
     String id;
     String phone;
     String email;
+    String facebook;
+    String instagram;
     String userId;
 }

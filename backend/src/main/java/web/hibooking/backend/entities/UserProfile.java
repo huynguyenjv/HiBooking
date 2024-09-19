@@ -27,6 +27,9 @@ public class UserProfile {
     String lastName;
 
     @Column(nullable = true)
+    Boolean gender;
+
+    @Column(nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     String birthDay;
 
@@ -38,7 +41,7 @@ public class UserProfile {
     Timestamp deletedAt;
 
     @OneToOne
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     User user;
 
     @PrePersist

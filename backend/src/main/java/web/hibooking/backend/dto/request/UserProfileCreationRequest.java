@@ -12,5 +12,6 @@ public class UserProfileCreationRequest {
     String firstName;
     String lastName;
     String birthDay;
+    Boolean gender;
     String userId;
 }

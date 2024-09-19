@@ -1,6 +1,6 @@
 package web.hibooking.backend.enums;
 
-public enum Role {
+public enum RoleEnum {
     ADMIN,
     USER
 }

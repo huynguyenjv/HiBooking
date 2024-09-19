@@ -24,4 +24,13 @@ public class AddressController {
                 .message("Address created successfully")
                 .build();
     }
+
+    @PutMapping("/update")
+    public ApiResponse<AddressResponse> update(@RequestBody AddressCreationRequest request) {
+        return ApiResponse.<AddressResponse>builder()
+                .result(addressService.updateByUserId(request))
+                .code(1000)
+                .message("Address updated successfully")
+                .build();
+    }
 }

@@ -16,4 +16,6 @@ public class UserProfileResponse {
     String firstName;
     String lastName;
     String birthDay;
+    Boolean gender;
+    String userId;
 }

@@ -25,5 +25,12 @@ public class ContactCreationRequest {
     @Email
     String email;
 
+    @Size(min = 1, max = 200, message = "Facebook must be between 1 and 200 characters")
+    String facebook;
+
+    @Size(min = 1, max = 200, message = "Instagram must be between 1 and 200 characters")
+    String instagram;
+
+
     String userId;
 }

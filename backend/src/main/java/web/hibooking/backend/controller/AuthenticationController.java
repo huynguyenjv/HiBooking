@@ -40,6 +40,13 @@ public class AuthenticationController {
     ApiResponse<IntrospectResponse> authenticate(@RequestBody IntrospectRequest request)
             throws ParseException, JOSEException {
         var result = authenticationService.introspect(request);
+        if(!result.isValid()){
+            return ApiResponse.<IntrospectResponse>builder()
+                    .result(result)
+                    .code(401)
+                    .message("Token is valid")
+                    .build();
+        }
         return ApiResponse.<IntrospectResponse>builder()
                     .result(result)
                     .code(1000)
