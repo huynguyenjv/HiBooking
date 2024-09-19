@@ -24,18 +24,18 @@ export default function Navbar() {
 
     return (
         <nav id="header" className={`fixed w-full z-30 top-0 ${isScrolled ? "bg-white shadow-md opacity-80" : ""}`}>
-            <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                <div className="pl-4 flex items-center">
-                    <a className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+            <div className="container flex flex-wrap items-center justify-between w-full py-2 mx-auto mt-0">
+                <div className="flex items-center pl-4">
+                    <a className="text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl" href="/">
                         <img src={Logo} alt="logo" className="h-[25%] w-[25%]" />
                     </a>
                 </div>
-                <div className="block lg:hidden pr-4">
+                <div className="block pr-4 lg:hidden">
                     <button
                         id="nav-toggle"
-                        className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                        className="flex items-center p-1 text-pink-800 transition duration-300 ease-in-out transform hover:text-gray-900 focus:outline-none focus:shadow-outline hover:scale-105"
                     >
-                        <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="w-6 h-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                         </svg>
@@ -47,15 +47,15 @@ export default function Navbar() {
                     } text-black p-4 lg:p-0 z-20`}
                     id="nav-content"
                 >
-                    <ul className="list-reset lg:flex justify-end flex-1 items-center">
+                    <ul className="items-center justify-end flex-1 list-reset lg:flex">
                         <li className="mr-3">
-                            <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="/">
+                            <a className="inline-block px-4 py-2 font-bold text-black no-underline" href="/">
                                 Đặt Phòng
                             </a>
                         </li>
                         <li className="mr-3">
                             <a
-                                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                                className="inline-block px-4 py-2 text-black no-underline hover:text-gray-800 hover:text-underline"
                                 href="/"
                             >
                                 Giỏ Hàng
@@ -63,8 +63,8 @@ export default function Navbar() {
                         </li>
                         <li className="mr-3">
                             <a
-                                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                                href="/"
+                                className="inline-block px-4 py-2 text-black no-underline hover:text-gray-800 hover:text-underline"
+                                href="/dang-nhap"
                             >
                                 Đăng nhập
                             </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
                     </button>
                 </div>
             </div>
-            <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
+            <hr className="py-0 my-0 border-b border-gray-100 opacity-25" />
         </nav>
     );
 }

@@ -1,6 +1,7 @@
 package web.hibooking.backend.exception;
 
 import lombok.Getter;
+import web.hibooking.backend.enums.ErrorCode;
 
 @Getter
 public class AppException extends RuntimeException {

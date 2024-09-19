@@ -2,17 +2,14 @@ package web.hibooking.backend.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.hibernate.annotations.Filter;
 import org.springframework.stereotype.Service;
 import web.hibooking.backend.dto.request.RoleCreationRequest;
 import web.hibooking.backend.dto.response.RoleResponse;
 import web.hibooking.backend.entities.Role;
 import web.hibooking.backend.exception.AppException;
-import web.hibooking.backend.exception.ErrorCode;
+import web.hibooking.backend.enums.ErrorCode;
 import web.hibooking.backend.mapper.RoleMapper;
 import web.hibooking.backend.repository.RoleRepository;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
